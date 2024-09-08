@@ -1,0 +1,78 @@
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "GOT";
+  src: url("./assets/GOT.ttf") format("truetype");
+}
+
+body {
+  background-color: black;
+
+}
+.main {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.header{
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.body {
+  padding: 10px;
+  border: 2px solid black;
+  gap:30px;
+  justify-content: center;
+  align-items: center;
+  display : grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+
+.card {
+  background-color: #1A1A1A; 
+  border: 1px solid #D4AF37; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  width: 320px;
+}
+
+.card img{
+  width: 100%;
+  display: block;
+
+}
+
+.scorecard{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  color: #D4AF37;
+  padding: 10px;
+  text-align: left;
+}
+
+#title h1 {
+  font-weight: 400;
+}
+
+#title p{
+  font-family: "Cinzel";
+}
+#title,.name {
+  font-family: "GOT";
+  font-weight: 400;
+  color: #D4AF37;
+}
+
